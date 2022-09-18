@@ -1,0 +1,71 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Resume</title>
+        <div style="border:25px solid #401D51 ;"></div>
+
+        <link rel="stylesheet" href="style.css">
+        <script src="http://kit.fontawesome.com/02ecc23078.js"crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="container"></div>
+        <div class="profile"></div>
+        <img src="Untitled-design-2021-07-06T142744.045-1 (1).jpg"class="Untitled-design-2021-07-06T142744.045-1 (1).jpg">
+        <h1>ANUJA</h1>
+        <p>Web Developer</p>
+
+        <i class="fa-brands fa-square-facebook"></i>
+        <i class="fa-brands fa-square-instagram"></i>
+        <i class="fa-brands fa-linkedin"></i>
+        <i class="fa-brands fa-square-twitter"></i>
+     <div class="button">
+        <a href="#" class="btn">download cvc</a>
+        <a href="#" class="btn">hire me</a>
+
+    </div>
+    <div class="information"></div>
+    <div class="about"></div>
+    <h3 class="title"> About me</h3>
+    <p>Hello i'm Anuja. Iam passionate about UI/UX Design and web Design. Iam a skilled fronted Developer.</p><br>
+    <div class="box-container"></div>
+        <div class="box">
+            <h4> <span> Age :</span> 21</h4>
+            <h4> <span> Email :</span> anujasubramani87@gmail.com</h4>
+            <h4> <span> Mobile :</span> 7395967788</h4>
+            <h4> <span> Address :</span> Chennai,india</h4>
+
+            <h3 class="title"> Professional Skills</h3>
+            <div class="Skill"></div>
+            <div class="Skill-name">HTML</div>
+            <div class="Skill-bar"></div>
+            <div class="html Skill-fill"></div>
+            <span class="Skill-per">90%</span>
+            <div class="Skill"></div>
+            <div class="Skill-name">CSS</div>
+            <div class="Skill-bar"></div>
+            <div class="css Skill-fill"></div>
+            <span class="Skill-per">90%</span>
+            <div class="Skill"></div>
+            <div class="Skill-name">PHP</div>
+            <div class="Skill-bar"></div>
+            <div class="php Skill-fill"></div>
+            <span class="Skill-per">89%</span>
+            <div class="Skill"></div>
+            <div class="Skill-name">JAVASCRIPT</div>
+            <div class="Skill-bar"></div>
+            <div class="javascript skill-fill"></div>
+            <span class="Skill-per">70%</span>
+        
+        
+        </div>
+    </body>
+</html>
+
+
+
+    
+
+
+    
