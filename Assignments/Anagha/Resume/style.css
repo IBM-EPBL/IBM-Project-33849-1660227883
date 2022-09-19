@@ -1,21 +1,18 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,200;1,300;1,400&display=swap');
-
+@import url("http://fonts.googleapis.com/css2?family=poppins:inal,wght@1,200;1,300;1,400&display=swap");
 body{
-    background-color: #00C1D4;
+    background-color:#00c1D4;
 }
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins',sans-serif;
+    font-family: 'poppins',sans-serif;
     outline: none;
     border: none;
-    text-decoration: none;
+    text-decoration: none;q
 }
 .title{
     font-size: 30px;
-    
 }
 .button{
     display: flex;
@@ -23,17 +20,16 @@ body{
     margin: 20px 0;
 }
 .button a{
-    text-align: center;
-    display: flex;
+    text-align: none;
+    display: inline-flex;
     align-items: center;
     height: 30px;
-    background: white;
-    color: blue;
+    background:white;
+    color:blue;
     border-radius: 5px;
     padding: 10px 30px;
     margin-right: 25px;
-    
-    font-size: 15px;
+    font-size: 15;
 }
 .skill{
     position: relative;
@@ -47,7 +43,7 @@ body{
     width: 25%;
     background: lightcoral;
     height: 10px;
-    z-index: -3;
+    z-index: -1;
     border-radius: 5px;
     position: absolute;
 }
