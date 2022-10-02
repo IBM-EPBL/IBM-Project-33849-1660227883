@@ -1,11 +1,11 @@
-from flask import Flask, render_template
+from flask impport flask,render,template
 
 
-app=Flask(__name__)
+app=flask(__name__)
 
 @app.route('/index')
 def index():
-    return render_template('Index.html')
+    return render_template('index.html')
 
 
 @app.route('/home')
@@ -16,7 +16,7 @@ def home():
 def login():
     return render_template('Login page.html')
 
-@app.route('/register')
+@app.route('/regiser')
 def register():
     return render_template('Registeration page.html')
 
@@ -25,5 +25,5 @@ def register():
 
 
 
-if __name__=='__main__':
-    app.run()
+    if __name__=='main':
+        app.run()    
