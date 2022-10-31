@@ -7,3 +7,56 @@
      background-size: cover;
      height: 80vh;
 }
+
+.title{
+     color: purple;
+     position: absolute;
+     top: 20%;
+     width: 100%;
+     text-align: left;
+     padding: 30px;
+}
+
+.read{
+     color: black;
+     position: absolute;
+     top: 30%;
+     width: 100%;
+     text-align: left;
+     padding: 30px;
+}
+
+.container{
+     position: absolute;
+     padding: 20px;
+     width: 100;
+}
+
+input[type="text"]
+{
+     padding: 0 25px;
+     border-radius: 25px 0 0 25px;
+     width: 350px;
+     font-size: 20px;
+     display: inline-block;
+     box-sizing: border-box;
+     
+
+
+}
+
+input[type="Submit"]
+{
+     position: relative;
+     display: inline-block;
+     font-size: 20px;
+     box-sizing: border-box;
+     border-radius: 0 25px 25px  0;
+     width: 100px;
+     background-color: aqua;
+     padding: 0%;
+     
+
+
+}
+
