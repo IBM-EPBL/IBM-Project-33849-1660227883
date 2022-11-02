@@ -19,3 +19,6 @@ def SignUp():
 @app.route('/home')
 def Home():
     return render_template('Home.html')
+
+    if __name__ =='__main__':
+         app.run(debug=True)
