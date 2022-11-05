@@ -1,0 +1,29 @@
+{% extends 'layouts.html' %}
+{% block contentA %}
+<div class="container w-50">
+    <form method="POST" action="">
+{{form.hidden_tag()}}
+<fieldset class="form-group">
+<legend class="border-bottom md-4">Join Today</legend>
+<div class="form-group">
+    {{form.username.label(class="form-control-label")}}
+    {%if form.username.errors%}
+    {{form.username(class="form-control form-control-lg is-invalid")}}
+        {%for error in form.username.errors%}
+         <span>error</span>
+    {%endfor%}
+    {%else%}
+    {{form.username(class="form-control form-control-lg")}}
+    {%endif%}
+    
+</div>
+</fieldset>
+<div class="field-groups">
+    {{form.submit(class='btn btn-online-info')}}
+</div>
+
+
+</form>
+</div>
+{% endblock contentA %}
+    
