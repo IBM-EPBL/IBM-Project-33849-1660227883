@@ -1,6 +1,5 @@
 from nutri_app import app
-from flask import render_template, url_for, redirect
-from nutri_app.forms import RegistrationForm, LoginForm
+from flask import render_template, url_for
 @app.route('/')
 @app.route('/home')
 def homepage():
@@ -14,12 +13,9 @@ def about():
 def login():
     return  render_template('login.html',title='login')
 
-@app.route('/register',methods=['POST','GET'])
+@app.route('/register')
 def register():
-    form=RegistrationForm()
-    if form.validate_on_submit():
-        return redirect(url_for('homepage'))
-    return  render_template('register.html',title='Register',form=form)
+    return render_template('register.html',title='register')
 
 @app.route('/contact')
 def contact():
