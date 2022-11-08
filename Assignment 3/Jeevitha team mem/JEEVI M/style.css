@@ -1,0 +1,17 @@
+
+
+body {
+    background-color:rgb(223, 223, 17);
+    align-items: center;
+    justify-content: center;
+    
+}
+
+
+
+img {
+    height: 200px;
+    border-radius: 10px;
+    margin: 10px;
+
+}
