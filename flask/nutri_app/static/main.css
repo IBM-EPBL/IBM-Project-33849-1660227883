@@ -1,5 +1,4 @@
 
-
 .image{
     
      background-image: url(https://www.itl.cat/pngfile/big/228-2281950_quotes-about-nutrition-month.jpg);
@@ -31,7 +30,8 @@
 .container{
      position: absolute;
      padding: 20px;
-     width: 100;
+     width: 100%;
+     top: 50%;
 }
 
 input[type="text"]
@@ -55,49 +55,22 @@ input[type="Submit"]
      box-sizing: border-box;
      border-radius: 0 25px 25px  0;
      width: 100px;
-     background-color: aqua;
+     background-color: paleturquoise;
      padding: 0%;
-     
+}
+.img{
+     background-image: url(https://static.wixstatic.com/media/64e8d3_4b62f37e58a54888abfc632cf7be6d8f~mv2.png/v1/fill/w_560,h_360,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/BG_Main.png);
+     background-size: cover;
+     background-position: center;
 }
 
-.carousel-item active{
-     color: black;
+.top-left{
      position: absolute;
-     top: 30%;
-     width: 100%;
-     text-align: left;
-     padding: 30px;
-}
+     top: 70px;
+     left: 16px;
+     padding-left: 10px;
+     color: papayawhip;
 
-input[type=text], select ,textarea {
-     width: 100%; 
-     padding: 12px;  
-     border: 1px solid #ccc; 
-     border-radius: 4px; 
-     box-sizing: border-box; 
-     margin-top: 6px; 
-     margin-bottom: 16px; 
-     resize: vertical 
    }
    
-     
-   input[type=submit] {
-     background-color: #04AA6D;
-     color: white;
-     padding: 12px 20px;
-     border: none;
-     border-radius: 4px;
-     cursor: pointer;
-   }
-   
-   
-   input[type=submit]:hover {
-     background-color: #45a049;
-   }
-   
-   
-   .container {
-     border-radius: 5px;
-     background-color: #f2f2f2;
-     padding: 20px;
-   }
+
