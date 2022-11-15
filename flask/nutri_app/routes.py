@@ -44,7 +44,7 @@ def login():
 
 @app.route('/register')
 def register():
-    return render_template('register.html',title='register')
+    return  render_template('register.html',title='Register')
 
 @app.route('/contact')
 def contact():
