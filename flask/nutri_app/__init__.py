@@ -1,4 +1,6 @@
 from flask import Flask
+import requests
+from flask_mail import Mail,Message
 
 app = Flask(__name__)
 

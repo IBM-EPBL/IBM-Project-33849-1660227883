@@ -1,0 +1,42 @@
+{%extends 'layout2.html'%}
+
+{%block content%}
+<body>
+    <div class="img3">
+<div class="calories-cal">
+    <div class="contain">
+        <div class="row1">
+            <div class="col-md-6">
+                <div class="left-data">
+                <h1>Calorie Calculator</h1>
+                <h5>Weight (kg)</h5>
+                <input type="text1" id="we">
+
+                <h5>Height (cm)</h5>
+                <input type="text1" id="hi">
+
+                <h5>Age</h5>
+                <input type="text1" id="age">
+
+                <p id="resultcal"></p>
+
+                <button  class="btn btn-primary" onclick="Calo()">Calculate</button>
+                <button class="btn btn-danger" onclick="Clear()">Clear</button>
+                <p>Please Enter Weight Height and Age</p>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="pie-chart">
+                <h1 style="color:#F2DEBA">Pie Chart</h1>
+                <canvas id="myChart"></canvas>
+            </div>
+        </div>
+    </div>
+
+</div>
+</div>
+
+</div>
+
+</body>
+    {%endblock content%}
