@@ -1,7 +1,10 @@
+
 from nutri_app import app
-from flask import render_template, url_for, request, redirect
+from flask import render_template, url_for, request, redirect, session
+from nutri_app.forms import RegistrationForm,LoginForm
 from flask_mail import Mail,Message
 import requests
+
 
 
 mail = Mail(app)
@@ -15,11 +18,14 @@ app.config['MAIL_USE_SSL'] = True
 
 mail = Mail(app)
 
-@app.route("/index")
+
+
+
+@app.route('/index')
 def index():
     return render_template("index.html")
 
-@app.route("/result",methods=['POST','GET'])
+@app.route('/result',methods=['POST','GET'])
 def result():
      if request.method == "POST":
          msg = Message(request.form.get("Subject"),sender='anuani191312@gmail.com', recipients=[request.form.get("Email")])
@@ -28,7 +34,7 @@ def result():
          return render_template('result.html',result="success!")
      else:
          return render_template('result.html', result="failure!")
-     
+
 @app.route('/')
 @app.route('/home')
 def homepage():
@@ -37,18 +43,32 @@ def homepage():
 @app.route('/about')
 def about():
     return  render_template('about.html',title='About')
-
-@app.route('/login')
+@app.route('/login',methods=['POST','GET'])
 def login():
-    return  render_template('login.html',title='login')
+    form=LoginForm()
+    if form.validate_on_submit():
+        if form.email.data=='anuani191312@gmail.com' and form.password.data=='anuani123':
+            return redirect(url_for('dashboard'))
+        else:
+            return redirect(url_for('homepage'))
+    return  render_template('login.html',title='login',form=form)
 
-@app.route('/register')
+@app.route('/register',methods=['POST','GET'])
 def register():
-    return  render_template('register.html',title='Register')
+    form=RegistrationForm()
+    if form.validate_on_submit():
+        return redirect(url_for('add'))
+    return  render_template('register.html',title='register',form=form)
+
+
+
 
 @app.route('/contact')
 def contact():
-    return  redirect(url_for('recipes'))
+    return  render_template('contact.html',title='contact')
+@app.route('/add')
+def add():
+    return  render_template('add.html',title='add')
 
 @app.route('/dashboard')
 def dashboard():
@@ -62,6 +82,12 @@ def tqpage():
 @app.route('/tips')
 def tips():
     return  render_template('tips.html',title='tips')
+@app.route('/register1',methods=['GET','POST'])
+def register1():
+    return  render_template('register1.html',title='register1')
+@app.route('/login1')
+def login1():
+    return  render_template('login1.html',title='login1')
 
 
 
@@ -77,9 +103,6 @@ def calorietracker():
 def recipes():
     return  render_template('recipes.html',title='recipes')
 
-@app.route('/search')
-def search():
-    return  render_template('search.html',title='search')
 
 
 
@@ -107,8 +130,4 @@ def food():
     serving_size=response.json()['items'][0]['serving_size_g'],sodium=response.json()['items'][0]['sodium_mg'],potassium=response.json()['items'][0]['potassium_mg'],fat_saturated=response.json()['items'][0]['fat_saturated_g'],
     fat_total=response.json()['items'][0]['fat_total_g'],cholesterol=response.json()['items'][0]['cholesterol_mg'],protein=response.json()['items'][0]['protein_g'],
     carbohydrates_total=response.json()['items'][0]['carbohydrates_total_g'])
-
-
-
-
 
