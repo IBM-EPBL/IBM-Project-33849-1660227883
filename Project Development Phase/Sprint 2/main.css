@@ -1,0 +1,316 @@
+
+.image{
+    
+     background-image: url(https://www.supersmart.com/data/images/blog/pomme-futuriste-nourriture.jpg);
+     background-position: center;
+     background-size: cover;
+     height: 80vh;
+
+}
+
+
+.title{
+     color: purple;
+     position: absolute;
+     font-family: "Audiowide", sans-serif;
+     top: 20%;
+     width: 100%;
+     text-align: left;
+     padding: 30px;
+}
+
+
+
+.container{
+     position: absolute;
+     padding: 20px;
+     width: 100%;
+     top: 50%;
+}
+
+input[type="text"]
+{
+     padding: 0 25px;
+     border-radius: 25px 0 0 25px;
+     width: 350px;
+     font-size: 20px;
+     display: inline-block;
+     box-sizing: border-box;
+     
+
+
+}
+
+input[type="Submit"]
+{
+     position: relative; 
+     display: inline-block;
+     font-size: 20px;
+     box-sizing: border-box;
+     border-radius: 0 25px 25px  0;
+     width: 100px;
+     background-color: paleturquoise;
+     padding: 0%;
+}
+.img{
+     background-image: url(https://static.wixstatic.com/media/64e8d3_4b62f37e58a54888abfc632cf7be6d8f~mv2.png/v1/fill/w_560,h_360,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/BG_Main.png);
+     background-size: cover;
+     background-position: center;
+}
+
+.top-left{
+     position: absolute;
+     top: 70px;
+     left: 16px;
+     padding-left: 10px;
+     color: papayawhip;
+
+   }
+   
+   
+
+.img1{
+         
+     background-image: url(https://c1.wallpaperflare.com/preview/431/843/658/vegetables-dark-mood-food-photography-carrots.jpg);
+     background-position: center;
+     background-size: cover;
+     height: 80vh;
+}
+
+.head{
+     color: whitesmoke;
+     position: absolute;
+     top: 30%;
+     width: 100%;
+     text-align: center;
+     padding: 30px;    
+}
+
+.read1{
+     color: white;
+     position: absolute;
+     top: 50%;
+     width: 100%;
+     text-align: center;
+     padding: 30px;
+}
+
+.click{
+     position: relative;
+     display: inline-block;
+     font-size: 20px;
+     box-sizing: border-box;
+     border-radius: 10px;
+     width: 100px;
+     background-color: paleturquoise;
+     padding: 0%;
+
+}
+
+.img2{
+     background-image: url(https://p4.wallpaperbetter.com/wallpaper/688/354/537/food-berry-blueberry-cherry-wallpaper-preview.jpg);
+     background-position: center;
+     background-size: cover;
+     height: 80vh;
+     border-image: black;
+}    
+
+.head1{
+     color: wheat;
+     position: absolute;
+     top: 30%;
+     width: 100%;
+     text-align:center;
+     
+}
+
+.data{
+     color: wheat;
+     position: absolute;
+     top: 40%;
+     width: 100%;
+     text-align:center;
+
+}
+
+input[type="button"]
+{
+     position: relative;
+     display: inline-block;
+     font-size: 20px;
+     box-sizing: border-box;
+     border-radius: 10px;
+     background-color: paleturquoise;
+     width: 30px;
+     padding: 0%;
+     text-align: center;
+}
+
+
+
+.calories-cal .contain{
+     border-radius: 40px;
+     padding: 0px;
+     margin-top: 100px;
+}
+
+.calories-cal input{
+     background-color: #F2DEBA;
+     border: none;
+     color: #404258;
+}
+
+#resultcal{
+     color: black;
+     padding-top: 0.5rem;
+}
+
+.left-data{
+     background-color: #FD841F;
+     opacity: 0.9;
+     text-align: center;
+     border-top-left-radius: 30px;
+     height: 100%;
+}
+
+.pie-chart{
+     height: 100%;
+     border-bottom-right-radius: 30px;
+     text-align: center;
+}
+
+.img3{    
+     background-image: url(https://caloriebase.com/tpls/_img/default/bg_qw.jpg);
+     background-position: center;
+     background-size: cover;
+     height: 100%;
+     width: 100%;
+     
+}
+
+
+ /* now for the container */
+ .container1{
+     margin: auto;
+     max-width: 800px;
+     display: flex;
+     flex-direction: column;align-items: center;
+     justify-content: center;
+     text-align: center;
+ }
+ .flex{
+     display: flex;
+ }
+ /* for input output buttons */
+ input,button{
+     border: 1px;
+      border-top-left-radius: 4px ;
+      border-bottom-left-radius: 4px;
+      font-size: 14px;
+      padding: 8px 10px;
+      margin: 0;
+ 
+ }
+ input[type="text"]{
+     width: 300px;
+ }
+ .search-button{
+    cursor: pointer;
+    border-left: 0;
+    border-radius: 0;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+ 
+ }
+ .random-btn{
+     cursor: pointer;
+     margin-left: 10px;
+     border-top-right-radius: 4px;
+     border-bottom-right-radius: 4px;
+ }
+ /* meal display */
+ .meals{
+     display: grid;
+     grid-template-columns: repeat(4,1fr);
+     grid-gap: 20px;
+ 
+ }
+ .meal{
+     cursor: pointer;
+     position: relative;
+     height: 180px;
+     width: 180px;
+     text-align: center;
+ }
+ 
+ /* for meals image */
+ .meal img{
+     width: 100%;
+     height: 100%;
+     border: 4px#fff solid;
+     border-radius: 2px;
+ }
+ /* for meal informations */
+ .meal-info{
+     position: absolute;
+     top: 0;
+     left: 0;
+     height: 100%;
+     width: 100%;
+     background: rgba(0,0,0,.7);
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     transition: opacity 0.2s ease-in;
+     opacity:0;
+ }
+ .meal:hover .meal-info{
+     opacity: 1;
+ }
+ 
+ @media(max-width:800px){
+     .meals{
+         grid-template-columns: repeat(3,1fr);
+ 
+     }
+ }
+ @media(max-width: 700px){
+     .meals{
+         grid-template-columns: repeat(2,1fr);
+     }
+     .meal{
+         height: 200px;
+         width: 200px;
+     }
+ }
+ @media(max-width: 500px){
+  input[type='text']{
+     width: 100%;
+  }
+  .meal{
+     grid-template-columns: repeat(2,1fr);
+  }
+  .meal{
+     height: 300px;
+     width: 300px;
+  }
+ }
+
+ .meal1{
+     color: olive;
+     position: relative;
+     text-align:center;
+ }
+
+ .click1{
+     position: relative;
+     display: inline-block;
+     font-size: 20px;
+     box-sizing: border-box;
+     border-radius: 10px;
+     width: 100px;
+     background-color: paleturquoise;
+     padding: 0%;
+
+}
+
